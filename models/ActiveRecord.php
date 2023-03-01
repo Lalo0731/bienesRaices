@@ -77,7 +77,7 @@ class ActiveRecord{
 
         if($resultado){
             $this->borrarImagen();
-            header('location: /bienes_raices/admin?resultado=3');
+            header('location: /bienesRaices/public/admin?resultado=3');
         }
     }
 
