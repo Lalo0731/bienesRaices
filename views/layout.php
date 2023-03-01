@@ -16,7 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienes Raices</title>
-    <link rel="stylesheet" href="/bienes_raices/build/css/app.css">
+    <link rel="stylesheet" href="/bienesRaices/public/build/css/app.css">
     <!-- <link rel="stylesheet" href="../../build/css/app.css"> -->
    
 </head>
@@ -24,21 +24,21 @@
     <header class="header <?php echo $inicio ? 'inicio' : ''; ?>">
         <div class="contenedor contenido-header">
             <div class="barra">
-                <a href="index.php">
-                    <img src="/bienes_raices/build/img/logo.svg" alt="Logo">
+                <a href="/bienesRaices/public/">
+                    <img src="/bienesRaices/public/build/img/logo.svg" alt="Logo">
                 </a>
                 <div class="mobile-menu">
                     <img src="/bienes_raices/build/img/barras.svg" alt="icono">
                 </div>
                 <div class="derecha">
-                    <img src="/bienes_raices/build/img/dark-mode.svg" alt="Boton dark" class="dark-mode-boton">
+                    <img src="/bienesRaices/public/build/img/dark-mode.svg" alt="Boton dark" class="dark-mode-boton">
                     <nav class="navegacion">
-                        <a href="nosotros.php">Nosotros</a>
-                        <a href="anuncios.php">Anuncios</a>
-                        <a href="blog.php">Blog</a>
-                        <a href="contacto.php">Contacto</a>
+                        <a href="/bienesRaices/public/nosotros">Nosotros</a>
+                        <a href="/bienesRaices/public/propiedades">Anuncios</a>
+                        <a href="/bienesRaices/public/blog">Blog</a>
+                        <a href="/bienesRaices/public/contacto">Contacto</a>
                         <?php if($auth): ?>
-                            <a href="/bienes_raices/cerrar-sesion.php">Cerrar Sesión</a>
+                            <a href="/bienesRaices/public/cerrar-sesion">Cerrar Sesión</a>
                         <?php endif ?>
                     </nav>
                 </div>

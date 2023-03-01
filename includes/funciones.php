@@ -59,7 +59,7 @@ function mostrarNotificacion($codigo){
     return $mensaje;
 }
 
-function validsrORedireccionar(string $url){
+function validarORedireccionar(string $url){
     $id = $_GET['id'];
     $id = filter_var($id, FILTER_VALIDATE_INT);
     

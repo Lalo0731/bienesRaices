@@ -7,11 +7,11 @@ const cssnano = require('cssnano');
 const concat = require('gulp-concat');
 const terser = require('gulp-terser-js');
 const rename = require('gulp-rename');
-const imagemin = require('gulp-imagemin'); // Minificar imagenes 
+const imagemin = require('gulp-imagemin');
 const notify = require('gulp-notify');
 const cache = require('gulp-cache');
 const clean = require('gulp-clean');
-const webp = require('gulp-webp');
+const webp = require('gulp-webp');*/
 
 const paths = {
     scss: 'src/scss/**/*.scss',
@@ -24,7 +24,6 @@ function css() {
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(postcss([autoprefixer(), cssnano()]))
-        // .pipe(postcss([autoprefixer()]))
         .pipe(sourcemaps.write('.'))
         .pipe(dest('./public/build/css'));
 }
@@ -36,20 +35,23 @@ function javascript() {
       .pipe(terser())
       .pipe(sourcemaps.write('.'))
       .pipe(rename({ suffix: '.min' }))
-      .pipe(dest('./public/build/js'))
+      .pipe(dest('/bienesRaices/public/build/js'))
+    //   .pipe(dest('./public/build/js')) //original
 }
 
 function imagenes() {
     return src(paths.imagenes)
         .pipe(cache(imagemin({ optimizationLevel: 3 })))
-        .pipe(dest('./public/build/img'))
+        .pipe(dest('/bienesRaices/public/build/img'))
+        // .pipe(dest('./public/build/img')) //original
         .pipe(notify({ message: 'Imagen Completada' }));
 }
 
 function versionWebp() {
     return src(paths.imagenes)
         .pipe(webp())
-        .pipe(dest('./public/build/img'))
+        .pipe(dest('/bienesRaices/public/build/img'))
+        // .pipe(dest('./public/build/img')) //original
         .pipe(notify({ message: 'Imagen Completada' }));
 }
 
@@ -63,4 +65,4 @@ function watchArchivos() {
 
 exports.css = css;
 exports.watchArchivos = watchArchivos;
-exports.default = parallel(css, javascript, imagenes, versionWebp, watchArchivos); 
+exports.default = parallel(css, javascript, imagenes, versionWebp, watchArchivos);

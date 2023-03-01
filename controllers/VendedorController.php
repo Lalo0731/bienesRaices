@@ -30,7 +30,7 @@ class VendedorController{
     public static function actualizar(Router $router){
         
         $errores = Vendedor::getErrores();
-        $id = validsrORedireccionar('/bienesRaices/public/admin');
+        $id = validarORedireccionar('/bienesRaices/public/admin');
 
         $vendedor = Vendedor::find($id);
 
