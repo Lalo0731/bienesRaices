@@ -8,7 +8,7 @@
         </div>
     <?php endforeach; ?>
 
-    <form class="formulario" method="POST" action="/bienes_raices/admin/vendedores/crear.php" enctype="multipart/form-data">
+    <form class="formulario" method="POST" action="/bienesRaices/public/vendedores/crear" enctype="multipart/form-data">
 
         <?php include 'formulario.php'; ?>
 
