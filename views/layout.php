@@ -28,7 +28,7 @@
                     <img src="/bienesRaices/public/build/img/logo.svg" alt="Logo">
                 </a>
                 <div class="mobile-menu">
-                    <img src="/bienes_raices/build/img/barras.svg" alt="icono">
+                    <img src="/bienesRaices/public/build/img/barras.svg" alt="icono">
                 </div>
                 <div class="derecha">
                     <img src="/bienesRaices/public/build/img/dark-mode.svg" alt="Boton dark" class="dark-mode-boton">
@@ -61,6 +61,6 @@
         <p class="copyright">Todos los derechos reservados <?php echo date('Y'); ?> &copy;</p>
     </footer>
     
-    <script src="/bienes_raices/build/js/bundle.min.js"></script>
+    <script src="/bienesRaices/public/build/js/bundle.min.js"></script>
 </body>
 </html>

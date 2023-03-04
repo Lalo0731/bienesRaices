@@ -1,4 +1,4 @@
-const { src, dest, watch, series, parallel } = require('gulp');
+const { src, dest, watch, parallel, series } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('autoprefixer');
 const postcss = require('gulp-postcss')
@@ -11,7 +11,7 @@ const imagemin = require('gulp-imagemin');
 const notify = require('gulp-notify');
 const cache = require('gulp-cache');
 const clean = require('gulp-clean');
-const webp = require('gulp-webp');*/
+const webp = require('gulp-webp');
 
 const paths = {
     scss: 'src/scss/**/*.scss',
@@ -35,14 +35,14 @@ function javascript() {
       .pipe(terser())
       .pipe(sourcemaps.write('.'))
       .pipe(rename({ suffix: '.min' }))
-      .pipe(dest('/bienesRaices/public/build/js'))
+      .pipe(dest('./public/build/js'))
     //   .pipe(dest('./public/build/js')) //original
 }
 
 function imagenes() {
     return src(paths.imagenes)
         .pipe(cache(imagemin({ optimizationLevel: 3 })))
-        .pipe(dest('/bienesRaices/public/build/img'))
+        .pipe(dest('./public/build/img'))
         // .pipe(dest('./public/build/img')) //original
         .pipe(notify({ message: 'Imagen Completada' }));
 }
@@ -50,7 +50,7 @@ function imagenes() {
 function versionWebp() {
     return src(paths.imagenes)
         .pipe(webp())
-        .pipe(dest('/bienesRaices/public/build/img'))
+        .pipe(dest('./public/build/img'))
         // .pipe(dest('./public/build/img')) //original
         .pipe(notify({ message: 'Imagen Completada' }));
 }
@@ -63,6 +63,7 @@ function watchArchivos() {
     watch(paths.imagenes, versionWebp);
 }
 
-exports.css = css;
-exports.watchArchivos = watchArchivos;
+// exports.css = css;
+// exports.watchArchivos = watchArchivos;
+// exports.javascript = javascript;
 exports.default = parallel(css, javascript, imagenes, versionWebp, watchArchivos);

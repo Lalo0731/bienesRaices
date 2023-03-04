@@ -10,6 +10,6 @@
         <p class="copyright">Todos los derechos reservados <?php echo date('Y'); ?> &copy;</p>
     </footer>
     
-    <script src="/bienesRaices/build/js/bundle.min.js"></script>
+    <script src="/bienesRaices/public/build/js/bundle.min.js"></script>
 </body>
 </html>
