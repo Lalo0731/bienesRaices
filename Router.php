@@ -16,6 +16,16 @@ class Router{
     }
 
     public function comprobarRutas(){
+
+        session_start();
+        $auth = $_SESSION['login'] ?? null;
+   
+        //Arreglo de rutas protegidas
+        $rutas_protegidas = ['/bienesRaices/public/admin','/bienesRaices/public/propiedades/crear',
+                            '/bienesRaices/public/propiedades/actualizar','/bienesRaices/public/propiedades/eliminar',
+                            '/bienesRaices/public/vendedores/crear','/bienesRaices/public/vendedores/actualizar', 
+                            '/bienesRaices/public/vendedores/eliminar'];
+
         $urlActual = $_SERVER['REQUEST_URI'] ?? '/';
         $metodo = $_SERVER['REQUEST_METHOD'];
         
@@ -25,6 +35,11 @@ class Router{
         } else{
             $urlActual = explode('?',$urlActual)[0];
             $fn = $this->rutasPOST[$urlActual] ?? null;
+        }
+
+        //Proteger las rutas
+        if(in_array($urlActual, $rutas_protegidas) && !$auth){
+            header('location: /bienesRaices/public');
         }
 
         if($fn){
