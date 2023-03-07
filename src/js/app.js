@@ -29,7 +29,7 @@ function darkMode(){
 
 // Inicio Otra froma del dark cuando pasas a ora vista no se pierde
 
-/*function darkMode(){
+function darkMode(){
  
         
     const prefiereDarkMode = window.matchMedia('(prefers-color-scheme-dark)');
@@ -67,7 +67,7 @@ function darkMode(){
     } else {
         document.body.classList.remove('dark-mode');
     }
-}*/
+}
 
 // Fin Otra froma del dark cuando pasas a ora vista no se pierde
 

@@ -4,6 +4,7 @@ namespace Controllers;
 use MVC\Router;
 use Model\Propiedad;
 use Model\Vendedor;
+use Model\Usuario;
 use Intervention\Image\ImageManagerStatic as Image;
 
 class PropiedadController{
@@ -13,12 +14,15 @@ class PropiedadController{
 
         $vendedores = Vendedor::all();
 
+        $usuarios = Usuario::all();
+
         $resultado = $_GET['resultado'] ?? null;
 
         $router->render('propiedades/admin',[
             'propiedades' => $propiedades,
             'resultado' => $resultado,
-            'vendedores' => $vendedores
+            'vendedores' => $vendedores,
+            'usuarios' => $usuarios
         ]);
     }
 

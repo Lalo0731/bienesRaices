@@ -5,6 +5,7 @@ require_once __DIR__ . '/../includes/app.php';
 use MVC\Router;
 use Controllers\PropiedadController;
 use Controllers\VendedorController;
+use Controllers\UsuarioController;
 use Controllers\PaginasController;
 use Controllers\LoginController;
 
@@ -23,6 +24,13 @@ $router->post('/bienesRaices/public/vendedores/crear', [VendedorController::clas
 $router->get('/bienesRaices/public/vendedores/actualizar', [VendedorController::class, 'actualizar']);
 $router->post('/bienesRaices/public/vendedores/actualizar', [VendedorController::class, 'actualizar']);
 $router->post('/bienesRaices/public/vendedores/eliminar', [VendedorController::class, 'eliminar']);
+
+//Usuarios
+$router->get('/bienesRaices/public/usuarios/crear', [UsuarioController::class, 'crear']);
+$router->post('/bienesRaices/public/usuarios/crear', [UsuarioController::class, 'crear']);
+$router->get('/bienesRaices/public/usuarios/actualizar', [UsuarioController::class, 'actualizar']);
+$router->post('/bienesRaices/public/usuarios/actualizar', [UsuarioController::class, 'actualizar']);
+$router->post('/bienesRaices/public/usuarios/eliminar', [UsuarioController::class, 'eliminar']);
 
 $router->get('/bienesRaices/public/', [PaginasController::class, 'index']);
 $router->get('/bienesRaices/public/nosotros', [PaginasController::class, 'nosotros']);
