@@ -29,21 +29,30 @@ class UsuarioController{
     }
 
     public static function actualizar(Router $router){
-        
+        // debuguear($router);
         $errores = Usuario::getErrores();
         $id = validarORedireccionar('/bienesRaices/public/admin');
 
-        $usuario = Usuario::find($id);
+        $usuario = new Usuario;
 
+        $usuario = Usuario::find($id);
+        // debuguear($usuario);
+        
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
+            $IdUser = $_POST['usuario'];
+            $IdUser['id'] = $id;
+
+            $usuario =  new Usuario($IdUser);
+            // debuguear($usuario);
             //Asignar los valores
-            $args = $_POST['usuario'];
-            debuguear($args);
+            // $args = $_POST['usuario'];
             
+            $args = $usuario;
+            // debuguear($args);
             //Sincronizar objeto en memoria de loq ue el usuario escribio
             // $usuario->sincronizar($nombre, $apellido, $email, $password);
             $usuario->sincronizar($args);
-    
+        
             $errores = $usuario->validar();
     
             if(empty($errores)){

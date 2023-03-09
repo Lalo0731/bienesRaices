@@ -15,5 +15,6 @@
     <input type="email" id="email" name="usuario[email]" placeholder="Email Usuario" value="<?php echo s( $usuario->email ); ?>">
 
     <label for="password">Password:</label>
-    <input type="password" id="password" name="usuario[password]" placeholder="Password Usuario" value="<?php echo s( $usuario->password ); ?>">
+    <input type="password" id="password" name="usuario[password]" placeholder="Password Usuario">
+    <!-- <input type="password" id="password" name="usuario[password]" placeholder="Password Usuario" value="<?php echo s( $usuario->password ); ?>"> -->
 </fieldset>
