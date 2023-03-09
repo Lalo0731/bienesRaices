@@ -25,7 +25,7 @@
         <div class="contenedor contenido-header">
             <div class="barra">
                 <a href="/bienesRaices/public/">
-                    <img src="/bienesRaices/public/build/img/logo.svg" alt="Logo">
+                    <img src="/bienesRaices/public/build/img/logoGorsa.svg" alt="Logo" class="img-logoGorsa">
                 </a>
                 <div class="mobile-menu">
                     <img src="/bienesRaices/public/build/img/barras.svg" alt="icono">

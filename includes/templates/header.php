@@ -21,7 +21,7 @@
         <div class="contenedor contenido-header">
             <div class="barra">
                 <a href="index.php">
-                    <img src="/bienesRaices/build/img/logo.svg" alt="Logo">
+                    <img src="/bienesRaices/build/img/logo.png" alt="Logo">
                 </a>
                 <div class="mobile-menu">
                     <img src="/bienesRaices/build/img/barras.svg" alt="icono">
