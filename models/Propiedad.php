@@ -4,10 +4,11 @@ namespace Model;
 
 class Propiedad extends ActiveRecord{
     protected static $tabla = 'propiedades';
-    protected static $columnasDB = ['id','titulo', 'precio', 'imagen', 'descripcion', 'habitaciones', 'wc', 'estacionamiento', 'creado', 'vendedores_id'];
+    protected static $columnasDB = ['id','titulo', 'tipo', 'precio', 'imagen', 'descripcion', 'habitaciones', 'wc', 'estacionamiento', 'creado', 'vendedores_id'];
 
     public $id;
     public $titulo;
+    public $tipo;
     public $precio;
     public $imagen;
     public $descripcion;
@@ -21,6 +22,7 @@ class Propiedad extends ActiveRecord{
     {
         $this->id = $args['id'] ?? null;
         $this->titulo = $args['titulo'] ?? '';
+        $this->titulo = $args['tipo'] ?? '';
         $this->precio = $args['precio'] ?? '';
         $this->imagen = $args['imagen'] ?? '';
         $this->descripcion = $args['descripcion'] ?? '';
@@ -66,6 +68,28 @@ class Propiedad extends ActiveRecord{
 
         return self::$errores;
 
+    }
+
+    public function filtrarPropiedades($type)
+    {
+        if($type != "") {
+            $query = "SELECT * FROM propiedades WHERE tipo = '".$type."'";
+            $resultado = self::$db->query($query);
+            $propiedades = [];
+            while($registro = $resultado->fetch_assoc()){
+                $objeto = new Propiedad;
+                foreach($registro as $key => $value){
+                    if(property_exists( $objeto, $key )){
+                        $objeto->$key = $value;
+                    }
+                }
+                $propiedades[] = $objeto;
+            }
+  
+       }else {
+            $propiedades = Propiedad::all();
+       }
+       return $propiedades;
     }
 }
 

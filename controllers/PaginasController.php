@@ -23,7 +23,14 @@ class PaginasController {
     }
 
     public static function propiedades(Router $router){
-        $propiedades = Propiedad::all();
+
+        if(isset($_GET['type'])) {
+            $propiedades =  new Propiedad();
+            $propiedades = $propiedades->filtrarPropiedades($_GET['type']);
+       }else {
+            $propiedades = Propiedad::all();
+       }
+
         $router->render('paginas/propiedades',[
             'propiedades' => $propiedades
         ]);

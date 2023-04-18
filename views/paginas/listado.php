@@ -22,6 +22,7 @@
                               <p><?php echo $propiedad->habitaciones; ?></p>
                          </li>
                     </ul>
+                    <p>tipo de propiedad: <?php echo $propiedad->tipo; ?></p>
                     <a href="/bienesRaices/public/propiedad?id=<?php echo $propiedad->id; ?>" class="boton-amarillo-block">
                          Ver Propiedad
                     </a>
