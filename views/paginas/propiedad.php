@@ -5,7 +5,7 @@
     <img loading="lazy" src="/bienesRaices/public/imagenes/<?php echo $propiedad->imagen; ?>" alt="Image de la propiedad">
 
     <div class="resumen-propiedad">
-        <p class="precio"><?php echo $propiedad->precio; ?></p>
+        <p class="precio">$ <?php echo $propiedad->precio; ?></p>
         <ul class="iconos-caracteristicas">
             <li>
                 <img class="icono" loading="lazy" src="build/img/icono_wc.svg" alt="icono wc">

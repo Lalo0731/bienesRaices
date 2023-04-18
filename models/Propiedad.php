@@ -22,7 +22,7 @@ class Propiedad extends ActiveRecord{
     {
         $this->id = $args['id'] ?? null;
         $this->titulo = $args['titulo'] ?? '';
-        $this->titulo = $args['tipo'] ?? '';
+        $this->tipo = $args['tipo'] ?? '';
         $this->precio = $args['precio'] ?? '';
         $this->imagen = $args['imagen'] ?? '';
         $this->descripcion = $args['descripcion'] ?? '';
@@ -36,6 +36,10 @@ class Propiedad extends ActiveRecord{
     public function validar(){
         if(!$this->titulo){
             self::$errores[] = "Debes añadir un titulo";
+        }
+
+        if(!$this->tipo){
+            self::$errores[] = "Debes seleccionar un tipo Renta o Venta";
         }
 
         if(!$this->precio){

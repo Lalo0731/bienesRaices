@@ -20,6 +20,7 @@
             <tr>
                 <!-- <th class="th">ID</th> -->
                 <th class="th">Título</th>
+                <th class="th">Tipo</th>
                 <th class="th">Imagen</th>
                 <th class="th">Precio</th>
                 <th class="th">Acciones</th>
@@ -32,6 +33,7 @@
                 <!-- <td class="td"><?php echo $propiedad->id; ?></td> -->
                 
                 <td class="td"><?php echo $propiedad->titulo; ?></td>
+                <td class="td"><?php echo $propiedad->tipo; ?></td>
                 <td class="td"><img src="/bienesRaices/public/imagenes/<?php echo $propiedad->imagen; ?>" class="imagen-tabla"></td>
                 <td class="td">$ <?php echo $propiedad->precio; ?></td>
                 <td class="td">

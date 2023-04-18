@@ -14,6 +14,47 @@
         <img src="/bienesRaices/public/imagenes/<?php echo $propiedad->imagen ?>" class="imagen-small">
     <?php } ?>
 
+    <label for="tipo">Tipo</label>
+    <select name="propiedad[tipo]" id="tipo">
+
+    <?php if($propiedad->tipo != '') {?> 
+        <option select value="">-- Seleccione --</option>
+        <?php if($propiedad->tipo == 'Venta') {?> 
+            <option 
+                <?php echo $propiedad->tipo === $propiedad->tipo ? 'selected' : '' ?>
+                value="<?php echo s($propiedad->tipo); ?>"><?php echo s($propiedad->tipo); ?>
+            </option>
+            <option  value="Renta" >Renta</option>
+        <?php } elseif($propiedad->tipo == 'Renta') {?>
+            <option 
+                <?php echo $propiedad->tipo === $propiedad->tipo ? 'selected' : '' ?>
+                value="<?php echo s($propiedad->tipo); ?>"><?php echo s($propiedad->tipo); ?>
+            </option>
+            <option  value="Venta" >Venta</option>
+        <?php } ?>
+    <?php } else {?>
+        <option select value="">-- Seleccione --</option>
+        <option  value="Venta" name="Venta">Venta</option>
+        <option  value="Renta" name="Renta">Renta</option>
+    <?php }?>
+    
+
+        <!-- <option 
+            <?php if($propiedad->tipo == 'Venta') {?>
+                <?php echo $propiedad->tipo === $propiedad->tipo ? 'selected' : '' ?>
+                value="<?php echo s($propiedad->tipo); ?>"><?php echo s($propiedad->tipo); ?>
+                <option  value="Renta" >Renta</option>
+            <?php } elseif($propiedad->tipo == 'Renta') {?>
+                <?php echo $propiedad->tipo === $propiedad->tipo ? 'selected' : '' ?>
+                value="<?php echo s($propiedad->tipo); ?>"><?php echo s($propiedad->tipo); ?>
+                <option  value="Venta" >Venta</option>
+            <?php } else {?>
+                <option  value="Venta" name="Venta">Venta</option>
+                <option  value="Renta" name="Renta">Renta</option>
+            <?php }?>
+        </option> -->
+    </select> 
+
     <label for="descripcion">Descripción:</label>
     <textarea id="descripcion" name="propiedad[descripcion]"><?php echo  s( $propiedad->descripcion ); ?></textarea>
 </fieldset>

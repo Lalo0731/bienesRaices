@@ -37,6 +37,7 @@ class PropiedadController{
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
             $propiedad = new Propiedad($_POST['propiedad']);
+            // debuguear($propiedad);
 
             $nombreImagen = md5( uniqid('')). '.jpg';
     

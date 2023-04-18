@@ -52,10 +52,10 @@
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
             <nav class="navegacion">
-                <a href="nosotros.php">Nosotros</a>
-                <a href="anuncios.php">Anuncios</a>
-                <a href="blog.php">Blog</a>
-                <a href="contacto.php">Contacto</a>
+                <a href="/bienesRaices/public/nosotros">Nosotros</a>
+                <a href="/bienesRaices/public/propiedades">Propiedad</a>
+                <!-- <a href="blog.php">Blog</a> -->
+                <a href="/bienesRaices/public/contacto">Contacto</a>
             </nav>
         </div>
         <p class="copyright">Todos los derechos reservados <?php echo date('Y'); ?> &copy;</p>
