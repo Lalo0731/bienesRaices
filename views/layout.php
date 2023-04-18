@@ -34,8 +34,8 @@
                     <img src="/bienesRaices/public/build/img/dark-mode.svg" alt="Boton dark" class="dark-mode-boton">
                     <nav class="navegacion">
                         <a href="/bienesRaices/public/nosotros">Nosotros</a>
-                        <a href="/bienesRaices/public/propiedades">Anuncios</a>
-                        <a href="/bienesRaices/public/blog">Blog</a>
+                        <a href="/bienesRaices/public/propiedades">Propiedades</a>
+                        <!-- <a href="/bienesRaices/public/blog">Blog</a> -->
                         <a href="/bienesRaices/public/contacto">Contacto</a>
                         <?php if($auth): ?>
                             <a href="/bienesRaices/public/logout">Cerrar Sesión</a>
