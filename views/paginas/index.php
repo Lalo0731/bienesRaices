@@ -22,9 +22,10 @@
     <a href="/bienesRaices/public/contacto" class="boton-amarillo">Contactános</a>
 </section>
 
-<div class="contenedor seccion seccion-inferior">
+<!-- <div class="contenedor seccion seccion-inferior">
     <section class="blog">
         <h3>Nuestros Blog</h3>
+
         <article class="entrada-blog">
             <div class="imagen">
                 <picture>
@@ -32,7 +33,7 @@
                     <source srcset="build/img/blog1.jpg" type="image/jpeg">
                     <img loading="lazy" src="build/img/blog1.jpg" alt="Texto Entrada Blog">
                 </picture>
-            </div>
+            </div> 
 
             <div class="texto-entrada">
                 <a href="entrada.php">
@@ -76,4 +77,19 @@
             </blockquote>
         </div>
     </section>
+</div> -->
+
+<div class="contenedor seccion">
+    <h1>Seguros</h1>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); justify-content: center; column-gap: 5rem;" >
+        <div>
+            <img src="build/img/fovissste.svg" alt="" >    
+        </div>
+        <div>
+            <img src="build/img/house.svg" alt="" >
+        </div>
+        <div>
+            <img src="build/img/infonavit.svg" alt="" >
+        </div>
+    </div>
 </div>
