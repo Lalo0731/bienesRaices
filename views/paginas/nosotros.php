@@ -12,19 +12,13 @@
 
         <div class="texto-nosotros">
             <blockquote>
-                25 años de experiencia
+                Comercial Gorsa
             </blockquote>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nihil, fugiat 
-                sequi sunt laborum vitae perspiciatis eos amet commodi! Fuga, veritatis. 
-                Sunt nesciunt harum eum ipsum fugit culpa earum ab.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, temporibus vero dolorem maiores deserunt atque. 
-                Rem corrupti eligendi suscipit atque, sapiente beatae quidem aliquid. Asperiores magnam dolore fugiat quas eos!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nihil, fugiat 
-                sequi sunt laborum vitae perspiciatis eos amet commodi! Fuga, veritatis. 
-                Sunt nesciunt harum eum ipsum fugit culpa earum ab.
+                Es una empresa Mexicana que inició operaciones en Septiembre de 2004 y que ofrece servicios de ingeniería y construcción y 
+                comercialización de viviendas de interés económicas, social y residencial. Sus oficinas generales se ubican en el Condominios 
+                el Pedregal con domicilio en Calle Circunvalación 300, Edificio 15 – Turquesa, Departamento 5, Fracc. Condominios el Pedregal, C.P. 29075 
+                en Tuxtla Gutierrez, Chiapas, México.
             </p>
         </div>
     </div>
