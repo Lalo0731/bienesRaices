@@ -20,6 +20,8 @@
                 <p><?php echo $propiedad->habitaciones; ?></p>
             </li>
         </ul>
-        <?php echo $propiedad->descripcion; ?>
+        <p><?php echo $propiedad->descripcion; ?></p>
+        <p>Cercano a: </br> <?php echo $propiedad->cercano; ?></p>
+        <p>Ubicación: </br> <?php echo $propiedad->ubicacion; ?></p>
     </div>
 </main>

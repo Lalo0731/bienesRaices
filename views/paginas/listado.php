@@ -9,6 +9,7 @@
                     <p><?php echo $propiedad->descripcion; ?></p>
                     <!-- <p class="precio">$<?php echo $propiedad->precio; ?></p> -->
                     <p class="precio">$<?php echo number_format($propiedad->precio,2); ?></p>
+                    <p>Clave: <?php echo $propiedad->clave; ?></p>
                     <ul class="iconos-caracteristicas">
                          <li>
                               <img class="icono" loading="lazy" src="build/img/icono_wc.svg" alt="icono wc">

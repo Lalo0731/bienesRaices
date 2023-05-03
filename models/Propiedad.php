@@ -4,14 +4,17 @@ namespace Model;
 
 class Propiedad extends ActiveRecord{
     protected static $tabla = 'propiedades';
-    protected static $columnasDB = ['id','titulo', 'tipo', 'precio', 'imagen', 'descripcion', 'habitaciones', 'wc', 'estacionamiento', 'creado', 'vendedores_id'];
+    protected static $columnasDB = ['id','titulo', 'tipo', 'clave', 'precio', 'imagen', 'descripcion', 'cercano', 'ubicacion', 'habitaciones', 'wc', 'estacionamiento', 'creado', 'vendedores_id'];
 
     public $id;
     public $titulo;
     public $tipo;
     public $precio;
+    public $clave;
     public $imagen;
     public $descripcion;
+    public $cercano;
+    public $ubicacion;
     public $habitaciones;
     public $wc;
     public $estacionamiento;
@@ -24,8 +27,11 @@ class Propiedad extends ActiveRecord{
         $this->titulo = $args['titulo'] ?? '';
         $this->tipo = $args['tipo'] ?? '';
         $this->precio = $args['precio'] ?? '';
+        $this->clave = $args['clave'] ?? '';
         $this->imagen = $args['imagen'] ?? '';
         $this->descripcion = $args['descripcion'] ?? '';
+        $this->cercano = $args['cercano'] ?? '';
+        $this->ubicacion = $args['ubicacion'] ?? '';
         $this->habitaciones = $args['habitaciones'] ?? '';
         $this->wc = $args['wc'] ?? '';
         $this->estacionamiento = $args['estacionamiento'] ?? '';
@@ -42,12 +48,20 @@ class Propiedad extends ActiveRecord{
             self::$errores[] = "Debes seleccionar un tipo Renta o Venta";
         }
 
+        if(!$this->clave){
+            self::$errores[] = "La clave es obligatorio";
+        }
+
         if(!$this->precio){
             self::$errores[] = "El precio es Obligatorio";
         }
 
         if(strlen( $this->descripcion ) < 50 ){
             self::$errores[] = "La descripción es obligatoria y debe tener al menos 50 caracteres";
+        }
+
+        if(strlen( $this->descripcion ) < 10 ){
+            self::$errores[] = "La ubicación es obligatoria";
         }
 
         if(!$this->habitaciones){

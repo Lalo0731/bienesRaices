@@ -4,6 +4,9 @@
     <label for="titulo">Titulo:</label>
     <input type="text" id="titulo" name="propiedad[titulo]" placeholder="Titulo Propiedad" value="<?php echo s( $propiedad->titulo ); ?>">
 
+    <label for="clave">Clave:</label>
+    <input type="text" id="clave" name="propiedad[clave]" placeholder="Clave Propiedad" value="<?php echo  s( $propiedad->clave ); ?>">
+
     <label for="precio">Precio:</label>
     <input type="text" id="precio" name="propiedad[precio]" placeholder="Precio Propiedad" value="<?php echo  s( $propiedad->precio ); ?>">
 
@@ -57,6 +60,12 @@
 
     <label for="descripcion">Descripción:</label>
     <textarea id="descripcion" name="propiedad[descripcion]"><?php echo  s( $propiedad->descripcion ); ?></textarea>
+
+    <label for="cercano">Cercano a:</label>
+    <textarea id="cercano" name="propiedad[cercano]"><?php echo  s( $propiedad->cercano ); ?></textarea>
+
+    <label for="ubicacion">Ubicación:</label>
+    <textarea id="ubicacion" name="propiedad[ubicacion]"><?php echo  s( $propiedad->ubicacion ); ?></textarea>
 </fieldset>
 
 <fieldset>
