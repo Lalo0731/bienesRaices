@@ -80,7 +80,7 @@
 </div> -->
 
 <div class="contenedor seccion">
-    <h1 class="texto-trabajamos">Trabajamos con:</h1>
+    <h1 class="texto-trabajamos">Aceptamos Créditos Bancarios</h1>
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); justify-content: center; column-gap: 5rem;" >
         <div>
             <img src="build/img/fovissste.svg" alt="" >    
