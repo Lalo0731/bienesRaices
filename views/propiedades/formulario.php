@@ -66,6 +66,9 @@
 
     <label for="ubicacion">Ubicación:</label>
     <textarea id="ubicacion" name="propiedad[ubicacion]"><?php echo  s( $propiedad->ubicacion ); ?></textarea>
+
+    <label for="url mapa">Url Mapa:</label>
+    <textarea id="url_mapa" name="propiedad[url_mapa]"><?php echo  s( $propiedad->url_mapa ); ?></textarea>
 </fieldset>
 
 <fieldset>

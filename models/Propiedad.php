@@ -4,7 +4,7 @@ namespace Model;
 
 class Propiedad extends ActiveRecord{
     protected static $tabla = 'propiedades';
-    protected static $columnasDB = ['id','titulo', 'tipo', 'clave', 'precio', 'imagen', 'descripcion', 'cercano', 'ubicacion', 'habitaciones', 'wc', 'estacionamiento', 'creado', 'vendedores_id'];
+    protected static $columnasDB = ['id','titulo', 'tipo', 'clave', 'precio', 'imagen', 'descripcion', 'cercano', 'ubicacion', 'url_mapa', 'habitaciones', 'wc', 'estacionamiento', 'creado', 'vendedores_id'];
 
     public $id;
     public $titulo;
@@ -15,6 +15,7 @@ class Propiedad extends ActiveRecord{
     public $descripcion;
     public $cercano;
     public $ubicacion;
+    public $url_mapa;
     public $habitaciones;
     public $wc;
     public $estacionamiento;
@@ -32,6 +33,7 @@ class Propiedad extends ActiveRecord{
         $this->descripcion = $args['descripcion'] ?? '';
         $this->cercano = $args['cercano'] ?? '';
         $this->ubicacion = $args['ubicacion'] ?? '';
+        $this->url_mapa = $args['url_mapa'] ?? '';
         $this->habitaciones = $args['habitaciones'] ?? '';
         $this->wc = $args['wc'] ?? '';
         $this->estacionamiento = $args['estacionamiento'] ?? '';

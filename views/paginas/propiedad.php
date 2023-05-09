@@ -23,5 +23,8 @@
         <p><?php echo $propiedad->descripcion; ?></p>
         <p>Cercano a: </br> <?php echo $propiedad->cercano; ?></p>
         <p>Ubicación: </br> <?php echo $propiedad->ubicacion; ?></p>
+        <div class="container_buttons_map">
+            <a href="<?php echo $propiedad->url_mapa; ?>" class="" target="_blank">Ver Ubicación de la Propiedad</a>
+        </div>
     </div>
 </main>
