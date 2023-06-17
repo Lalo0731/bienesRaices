@@ -12,7 +12,7 @@
     }
 </style>
 <main class="contenedor seccion">
-    <h2>Casas y Departamentos</h2>
+    <h2>Propiedades Disponibles</h2>
     <div class="container_buttons">
         <a href="/bienesRaices/public/propiedades?type=venta" class="">Filtrar por venta</a>
         <a href="/bienesRaices/public/propiedades?type=renta" class="">Filtrar por renta</a>

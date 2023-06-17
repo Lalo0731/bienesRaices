@@ -32,12 +32,17 @@
     h1{
         text-align: left;
         color: $blanco;
-        font-weight: $bold;
+        font-weight: $black;
         line-height: 2;
         max-width: 60rem;
+        font-size: 5rem;
     }
 }
 
 .img-logoGorsa{
-    width: 55%;
+    width: 100%;
+    margin-bottom: 2rem;
+    @include tablet{
+        width: 55%;
+    }
 }

@@ -11,7 +11,7 @@
         <img src="build/img/destacada.jpg" alt="Imagen Contacto">
     </picture>
 
-    <h2>Llene el formulario de Contaco</h2>
+    <h2>Llene el formulario de Contacto</h2>
     <form class="formulario" action="/bienesRaices/public/contacto" method="POST">
         <fieldset>
             <legend>Información Personal</legend>

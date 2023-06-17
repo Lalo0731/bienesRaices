@@ -4,7 +4,7 @@
 </main>
 
 <section class="seccion contenedor">
-    <h2>Casas y Depas en Venta</h2>
+    <h2>Propiedades Disponibles</h2>
     
         <?php
             $limite = 3;
@@ -81,15 +81,15 @@
 
 <div class="contenedor seccion">
     <h1 class="texto-trabajamos">Aceptamos Créditos Bancarios</h1>
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); justify-content: center; column-gap: 5rem;" >
+    <div class="creditoBancario" style="" >
         <div>
-            <img src="build/img/fovissste.svg" alt="" >    
+            <img src="build/img/fovissste.svg" class="w-25" alt="fovissste" >    
         </div>
         <div>
-            <img src="build/img/house.svg" alt="" >
+            <img src="build/img/house.svg" class="w-25" alt="house" >
         </div>
         <div>
-            <img src="build/img/infonavit.svg" alt="" >
+            <img src="build/img/infonavit.svg" class="w-25" alt="infonavit" >
         </div>
     </div>
 </div>

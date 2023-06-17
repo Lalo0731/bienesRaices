@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienes Raices</title>
+    <title>Comercial Gorsa</title>
     <link rel="stylesheet" href="/bienesRaices/public/build/css/app.css">
     <!-- <link rel="stylesheet" href="../../build/css/app.css"> -->
    
@@ -43,7 +43,7 @@
                     </nav>
                 </div>
             </div>
-            <?php echo $inicio ? "<h1>Venta de Casas y Departamentos Exclusivos de Lujos</h1>" : ''; ?>
+            <?php echo $inicio ? "<h1>El gusto de vivir bien</h1>" : ''; ?>
         </div>
     </header>
 
