@@ -81,7 +81,7 @@
 
 <div class="contenedor seccion">
     <h1 class="texto-trabajamos">Aceptamos Créditos Bancarios</h1>
-    <div class="creditoBancario" style="" >
+    <div class="creditoBancario">
         <div>
             <img src="build/img/fovissste.svg" class="w-25" alt="fovissste" >    
         </div>
