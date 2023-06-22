@@ -12,6 +12,7 @@
     </picture>
 
     <h2>Llene el formulario de Contacto</h2>
+    <p class="text-center">Si estás interesado en comprar, rentar o vender una propiedad llene el siguiente formulario y nosotros nos podremos en contacto, con usted.</p>
     <form class="formulario" action="/bienesRaices/public/contacto" method="POST">
         <fieldset>
             <legend>Información Personal</legend>

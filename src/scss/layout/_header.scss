@@ -7,7 +7,7 @@
     // background-image: url(../img/header.webp);
 }
 .header{
-    background-color: $grisOscuro;
+    background-color: $azulCielo;
     padding: 1rem 0 3rem 0;
 
     &.inicio{
@@ -41,8 +41,9 @@
 
 .img-logoGorsa{
     width: 100%;
-    margin-bottom: 2rem;
+    // margin-bottom: 2rem;
     @include tablet{
-        width: 55%;
+        // width: 55%;
+        width: 23%;
     }
 }

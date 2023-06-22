@@ -25,7 +25,7 @@
         <div class="contenedor contenido-header">
             <div class="barra">
                 <a href="/bienesRaices/public/">
-                    <img src="/bienesRaices/public/build/img/logoGorsa.svg" alt="Logo" class="img-logoGorsa">
+                    <img src="/bienesRaices/public/build/img/logo_gorsa.png" alt="Logo" class="img-logoGorsa">
                 </a>
                 <div class="mobile-menu">
                     <img src="/bienesRaices/public/build/img/barras.svg" alt="icono">
@@ -56,6 +56,7 @@
                 <a href="/bienesRaices/public/propiedades">Propiedad</a>
                 <!-- <a href="blog.php">Blog</a> -->
                 <a href="/bienesRaices/public/contacto">Contacto</a>
+                <a target="_blank" href="https://www.facebook.com/settings?tab=profile&section=username">Facebook</a>
             </nav>
         </div>
         <p class="copyright">Todos los derechos reservados <?php echo date('Y'); ?> &copy;</p>
