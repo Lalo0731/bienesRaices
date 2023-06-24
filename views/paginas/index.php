@@ -1,6 +1,28 @@
 <main class="contenedor seccion">
     <h1>Más Sobre Nosotros</h1>
-    <?php include 'iconos.php'; ?>
+    <div class="iconos-nosotros">
+        <div class="icono" id="icono_mision">
+            <a href="/bienesRaices/public/nosotros">
+                <img src="build/img/mision.svg" class="img_mision" alt="Icono Seguridad" loading="lazy">
+            </a>
+            <h3>Misión</h3>
+            <p id="mision">Construir y comercializar viviendas y desarrollos de calidad, con eficiencia y rentabilidad, utilizando tecnología y procesos constructivos innovadores, con la finalidad de satisfacer las expectativas de nuestros clientes, cuidando de su patrimonio, con ética y profesionalismo.</p>
+        </div>
+        <div class="icono" id="icono_vision">
+            <a href="/bienesRaices/public/nosotros">
+                <img src="build/img/vision.svg" class="img_vision" alt="Icono Precio" loading="lazy">
+            </a>
+            <h3>Visión</h3>
+            <p id="vision">Ser una empresa líder en el mercado de bienes raíces a nivel nacional, reconocida por su calidad, confiabilidad y eficiencia, asegurando los mejores resultados para nuestros clientes, colaboradores y accionistas.</p>
+        </div>
+        <div class="icono" id="icono_valores">
+            <a href="/bienesRaices/public/nosotros">
+                <img src="build/img/valores.svg" class="img_valores" alt="Icono Tiempo" loading="lazy">
+            </a>
+            <h3>Valores</h3>
+            <p id="valores">Liderazgo, Trabajo en equipo, Responsabilidad, Productividad, Comunicación, Humildad, Integridad, Lealtad</p>
+        </div>
+    </div>
 </main>
 
 <section class="seccion contenedor">

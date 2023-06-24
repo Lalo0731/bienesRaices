@@ -11,3 +11,46 @@
         text-transform: uppercase;
     }
 }
+
+.img_mision{
+    cursor: pointer;
+
+}
+
+#mision {
+    display: none;
+
+}
+  
+#icono_mision:hover > #mision {
+    display: block;
+}
+
+
+.img_vision{
+    cursor: pointer;
+
+}
+
+#vision {
+    display: none;
+
+}
+  
+#icono_vision:hover > #vision {
+    display: block;
+}
+
+.img_valores{
+    cursor: pointer;
+
+}
+
+#valores {
+    display: none;
+
+}
+  
+#icono_valores:hover > #valores {
+    display: block;
+}
