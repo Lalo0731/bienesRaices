@@ -1,19 +1,3 @@
-<style>
-    .img_point{
-        cursor: pointer;
-    }
-
-    .text_info{
-        height: 0;
-        opacity: 0;
-    }
-    
-    .icon_effect:hover > .text_info {
-        height: auto;
-        opacity: 1;
-        transition: all 1s ease-in;
-    }
-</style>
 <main class="contenedor seccion">
     <h1>Más Sobre Nosotros</h1>
     <div class="iconos-nosotros">

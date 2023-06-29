@@ -54,3 +54,18 @@
 #icono_valores:hover > #valores {
     display: block;
 }
+
+.img_point{
+    cursor: pointer;
+}
+
+.text_info{
+    height: 0;
+    opacity: 0;
+}
+
+.icon_effect:hover > .text_info {
+    height: auto;
+    opacity: 1;
+    transition: all 1s ease-in;
+}
