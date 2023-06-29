@@ -9,10 +9,9 @@ class LoginController{
     public static function login(Router $router){
         $errores = [];
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
-            
             $auth = new Admin($_POST);
             $errores = $auth->validar();
-
+            // return $errores;
             if(empty($errores)){
                 //Veificar si el usuario existe
                 $resultado = $auth->existeUsuario();
@@ -26,7 +25,7 @@ class LoginController{
 
                     if($autenticado){
                          // Autenticar al usaurio
-                         $auth->autenticar();
+                        $auth->autenticar();
                     } else{
                         $errores = Admin::getErrores();
                     }

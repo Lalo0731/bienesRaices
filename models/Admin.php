@@ -60,6 +60,11 @@ class Admin extends ActiveRecord{
         $_SESSION['usuario'] = $this->email;
         $_SESSION['login'] = true;
 
-        header('Location: /bienesRaices/public/admin');
+        // header('Location: /admin');
+
+        header("Status: 301 Moved Permanently");
+        header("Location:/admin");
+        echo"<script language='javascript'>window.location='/admin'</script>;";
+        exit();
     }
 }
